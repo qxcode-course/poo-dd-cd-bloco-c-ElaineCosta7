@@ -1,0 +1,219 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-09_18-20-01",
+            "content": "@@ -1,159 +0,0 @@\n-class Crian%C3%83%C2%A7a:%0A    def __init__(self, nome: str, idade: int):%0A        self.__nome: str = nome%0A        self.__idade: int = idade%0A%0A    def __str__(self) -%3E str:\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-09_18-32-30",
+            "content": "@@ -8,9 +8,10 @@\n rian\n-%C3%A7\n+%C3%83%C2%A7\n a:%0A \n@@ -156,37 +156,4 @@\n str:\n-%0A        return f%22%7Bself.__nome%7D%22%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-09_18-33-18",
+            "content": "@@ -126,125 +126,8 @@\n de%0A%0A\n-    def getNome(self) -%3E str:%0A        return self.__nome%0A    def getIdade(self) -%3E int:%0A        return self.__idade%0A%0A\n     \n@@ -188,10 +188,4 @@\n e%7D%22%0A\n-    %0A%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-09_18-35-21",
+            "content": "@@ -251,244 +251,61 @@\n def \n-setNome(self, nome: str) -%3E str:%0A    def setIdade(self, idade: int) -%3E int:%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.__nome%7D%22%0A    %0Aclass Trampolim:%0A    def __init__(self):%0A        self.__brincando:%0A        self.__esperando:\n+__str__(self) -%3E str:%0A        return f%22%7Bself.__nome%7D%22\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-11-09_18-41-04",
+            "content": "@@ -239,25 +239,24 @@\n _idade%0A%0A    \n-#\n def setNome(\n@@ -288,9 +288,8 @@\n     \n-#\n def \n@@ -461,324 +461,34 @@\n ndo:\n- list%5BCrian%C3%A7a %7C None%5D = %5B%5D%0A        self.__esperando: list%5BCrian%C3%A7a%5D = %5B%5D%0A%0A    def __str__(self) -%3E str:%0A        return%0A%0Adef main():%0A    trampolim = Trampolim%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A\n+%0A        self.__esperando:\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-11-09_18-45-43",
+            "content": "@@ -778,119 +778,8 @@\n reak\n-%0A        if args%5B0%5D == %22show%22:%0A            print(trampolim)%0A        else:%0A            print(%22comando invalido%22)\n %0A%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-09_18-47-16",
+            "content": "@@ -1,533 +1,114 @@\n-class Crian%C3%A7a:%0A    def __init__(self, nome: str, idade: int):%0A        self.__nome: str = nome%0A        self.__idade: int = idade%0A%0A    def getNome(self) -%3E str:%0A        return self.__nome%0A    def getIdade(self) -%3E int:%0A        return self.__idade%0A%0A    #def setNome(self, nome: str) -%3E str:%0A    #def setIdade(self, idade: int) -%3E int:%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.__nome%7D%22%0A    %0Aclass Trampolim:%0A    def __init__(self):%0A        self.__brincando\n+@@ -476,249 +476,66 @@%0A an%25C3%25A7a%0A-%255D = %255B%255D%250A        self.__espera\n : list\n-%5B\n+%255B\n Crian\n-%C3%A7a%5D = %5B%5D%0A        self.__espera: list%5BCrian%C3%A7a%5D = %5B%5D%0A%0A\n+%25C3%25A7a%255D = %255B%255D%250A%250A\n     \n@@ -133,17 +133,22 @@\n rian\n-%C3%A7\n+%25C3%25A7\n a: Crian\n %C3%A7a) \n@@ -147,21 +147,30 @@\n rian\n-%C3%A7\n+%25C3%25A7\n a) -\n-%3E\n+%253E\n  None:\n-%0A\n+%250A\n     \n@@ -203,13 +203,22 @@\n rian\n-%C3%A7a)%0A%0A\n+%25C3%25A7a)%250A%250A\n     \n@@ -235,17 +235,19 @@\n (self,):\n-%0A\n+%250A\n         \n@@ -264,17 +264,26 @@\n pera\n-%5B\n+%255B\n crian\n-%C3%A7a%5D\n+%25C3%25A7a%255D\n  = s\n@@ -294,20 +294,26 @@\n __espera\n-%5B0%5D%0A\n+%255B0%255D%250A\n         \n@@ -334,246 +334,158 @@\n pera\n-%5B0%5D%0A%0A%0A    def __str__(self) -%3E str:%0A        return f%22%22%0A%0Adef main():%0A    trampolim = Trampolim%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A   \n+%255B0%255D%250A%0A+ %257C None%255D = %255B%255D%250A        self.__esperando: list%255BCrian%25C3%25A7a%255D = %255B%255D%0A %250A%250A  %0A@@ -554,32 +554,32 @@%0A _(self) -%253E str:%250A%0A+%0A\n     \n@@ -493,128 +493,60 @@\n     \n-b\n re\n-ak%0A        if args%5B0%5D == %22show%22:%0A            print(trampolim)%0A        else:%0A            print(%22comando invalido%22)%0A%0A    %0A\n+turn f%0A@@ -580,12 +580,8 @@%0A turn%0A- f%2522%2522%0A %250A%250Ade\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-10_01-24-55",
+            "content": "@@ -1025,71 +1025,8 @@\n im)%0A\n-        if args%5B0%5D == %22arrive%22:%0A            trampolim.arrive()%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-10_01-25-37",
+            "content": "@@ -1057,38 +1057,8 @@\n e%22:%0A\n-            crian%C3%A7a = args%5B1%5D%0A\n     \n@@ -1082,23 +1082,16 @@\n .arrive(\n-crian%C3%A7a\n )%0A      \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-10_01-31-45",
+            "content": "@@ -1069,98 +1069,25 @@\n     \n-nome = args%5B1%5D%0A            idade = int(args%5B2%5D)%0A            crian%C3%A7a = Crian%C3%A7a(nome, idade)\n+crian%C3%A7a = args%5B1%5D\n %0A   \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-10_01-33-28",
+            "content": "@@ -762,17 +762,16 @@\n eturn f%22\n- \n %22%0A%0Adef m\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-10_01-39-55",
+            "content": "@@ -1252,16 +1252,8 @@\n %22)%0A%0A\n-main()%0A%0A\n     \n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-10_01-42-51",
+            "content": "@@ -803,18 +803,16 @@\n rampolim\n-()\n %0A    whi\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-10_02-00-45",
+            "content": "@@ -965,34 +965,32 @@\n   break%0A        \n-el\n if args%5B0%5D == %22s\n@@ -1032,18 +1032,16 @@\n         \n-el\n if args%5B\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-10_02-02-35",
+            "content": "@@ -757,187 +757,18 @@\n     \n-brincando = %22, %22.join(%5B%22---%22 if x is None else str(x) for x in self.__brincando%5D)%0A        espera = %22, %22.join(%5Bstr(x) for x in self.__espera%5D)%0A        return f%22%7Bespera%7D:%7Bbrincando%7D\n+return f%22 \n %22%0A%0Ad\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-10_02-11-39",
+            "content": "@@ -917,17 +917,15 @@\n  f%22%7B\n-%7B\n espera%7D\n-%7D\n :%7Bbr\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-10_02-12-17",
+            "content": "@@ -917,15 +917,17 @@\n  f%22%7B\n+%7B\n espera%7D\n+%7D\n :%7Bbr\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-10_02-12-40",
+            "content": "@@ -916,17 +916,16 @@\n n f%22\n-%5B\n %7Bespera%7D\n %5D:%7Bb\n@@ -920,17 +920,16 @@\n %7Bespera%7D\n-%5D\n :%7Bbrinca\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-10_02-12-48",
+            "content": "@@ -926,12 +926,9 @@\n ra%7D%5D\n- =%3E \n+:\n %7Bbri\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-10_02-13-19",
+            "content": "@@ -926,17 +926,16 @@\n ra%7D%5D =%3E \n-%5B\n %7Bbrincan\n@@ -937,17 +937,16 @@\n incando%7D\n-%5D\n %22%0A%0Adef m\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-10_02-13-28",
+            "content": "@@ -239,24 +239,25 @@\n _idade%0A%0A    \n+#\n def setNome(\n@@ -289,35 +289,9 @@\n     \n-    self.__nome = nome%0A    \n+#\n def \n@@ -328,37 +328,8 @@\n int:\n-%0A        self.__idade = idade\n %0A%0A  \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-10_02-16-15",
+            "content": "@@ -975,17 +975,16 @@\n %7Bespera%7D\n-:\n %5D =%3E %5B%7Bb\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-10_02-18-31",
+            "content": "@@ -975,16 +975,17 @@\n %7Bespera%7D\n+:\n %5D =%3E %5B%7Bb\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-10_02-18-39",
+            "content": "@@ -444,23 +444,8 @@\n ome%7D\n-:%7Bself.__idade%7D\n %22%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-10_02-24-29",
+            "content": "@@ -968,42 +968,8 @@\n a%5D)%0A\n-        ordenado = sorted(espera)%0A\n     \n@@ -987,16 +987,14 @@\n f%22%5B%7B\n-ordenado\n+espera\n %7D%5D =\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-10_02-28-52",
+            "content": "@@ -987,16 +987,18 @@\n o = sort\n+ed\n (espera)\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-10_02-30-01",
+            "content": "@@ -976,20 +976,30 @@\n     \n+ordenado = sort(\n espera\n-.sort(\n )%0A  \n@@ -1015,22 +1015,24 @@\n urn f%22%5B%7B\n-espera\n+ordenado\n %7D%5D =%3E %5B%7B\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-10_02-30-41",
+            "content": "@@ -964,16 +964,38 @@\n spera%5D)%0A\n+        espera.sort()%0A\n         \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-10_02-36-46",
+            "content": "@@ -921,17 +921,43 @@\n spera = \n-(\n+%22, %22.join(%5Bstr(x) for x in \n self.__e\n@@ -961,16 +961,17 @@\n __espera\n+%5D\n )%0A      \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-10_02-41-11",
+            "content": "@@ -925,53 +925,9 @@\n a = \n-%22, %22.join(%5Bcrian%C3%A7a.getIdade() for crian%C3%A7a in \n+(\n self\n@@ -935,17 +935,16 @@\n __espera\n-%5D\n )%0A      \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-10_02-43-23",
+            "content": "@@ -922,120 +922,39 @@\n pera\n-Ordenada = sorted(self.__espera, key=lambda crian%C3%A7a: crian%C3%A7a.getIdade())%0A        espera = %22, %22.join(%5Bstr(crian%C3%A7a\n+ = %22, %22.join(%5Bcrian%C3%A7a.getIdade(\n ) fo\n@@ -970,21 +970,20 @@\n  in \n-esperaOrdenad\n+self.__esper\n a%5D)%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-13_03-12-47",
+            "content": "@@ -678,24 +678,25 @@\n ian%C3%A7a)%0A%0A    \n+#\n def enter(se\n@@ -702,31 +702,19 @@\n elf,\n- index: int\n ):%0A\n-%0A\n         \n self\n@@ -701,32 +701,33 @@\n self,):%0A        \n+#\n self.__espera%5Bin\n@@ -724,21 +724,23 @@\n _espera%5B\n-index\n+crian%C3%A7a\n %5D = self\n@@ -760,16 +760,17 @@\n         \n+#\n del self\n@@ -1550,109 +1550,8 @@\n %C3%A7a)%0A\n-        elif args%5B0%5D == %22enter%22:%0A            index = int(args%5B1%5D)%0A            trampolim.enter(index)%0A\n     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-13_03-20-21",
+            "content": "@@ -696,16 +696,28 @@\n ter(self\n+, index: int\n ):%0A%0A    \n@@ -1586,16 +1586,49 @@\n enter%22:%0A\n+            index = int(args%5B1%5D)%0A\n         \n@@ -1647,16 +1647,21 @@\n m.enter(\n+index\n )%0A      \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-13_03-26-42",
+            "content": "@@ -722,23 +722,21 @@\n _espera%5B\n-crian%C3%A7a\n+index\n %5D = self\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-13_03-27-01",
+            "content": "@@ -708,23 +708,38 @@\n         \n+self.__espera%5B\n crian%C3%A7a\n+%5D\n  = self.\n@@ -750,15 +750,11 @@\n pera\n-.pop(0)\n+%5B0%5D\n %0A   \n@@ -762,40 +762,28 @@\n     \n+del \n self.__\n-brincando.append(crian%C3%A7a)\n+espera%5B0%5D\n %0A%0A%0A \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-13_03-31-12",
+            "content": "@@ -680,63 +680,8 @@\n n%C3%A7a)\n-%0A        self.__espera.sort(key=lambda c: c.getIdade())\n %0A%0A  \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-13_03-35-51",
+            "content": "@@ -795,10 +795,9 @@\n pop(\n--1\n+0\n )%0A  \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-13_03-45-27",
+            "content": "@@ -758,62 +758,8 @@\n f):%0A\n-        if len(self.__espera) == 0:%0A            return\n %0A   \n@@ -791,17 +791,18 @@\n era.pop(\n-0\n+-1\n )%0A      \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-13_03-50-57",
+            "content": "@@ -849,10 +849,9 @@\n pop(\n--1\n+0\n )%0A  \n@@ -884,11 +884,8 @@\n end(\n-0, \n cria\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-13_03-53-03",
+            "content": "@@ -845,17 +845,18 @@\n era.pop(\n-0\n+-1\n )%0A      \n@@ -873,32 +873,35 @@\n rincando.append(\n+0, \n crian%C3%A7a)%0A%0A%0A    d\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-13_03-54-13",
+            "content": "@@ -944,32 +944,56 @@\n do = %22, %22.join(%5B\n+%22---%22 if x is None else \n str(x) for x in \n@@ -1029,50 +1029,150 @@\n pera\n- = %22, %22.join(%5Bstr(x) for x in self.__esper\n+Ordenada = sorted(self.__espera, key=lambda crian%C3%A7a: crian%C3%A7a.getIdade())%0A        espera = %22, %22.join(%5Bstr(crian%C3%A7a) for crian%C3%A7a in esperaOrdenad\n a%5D)%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-13_04-07-20",
+            "content": "@@ -849,10 +849,9 @@\n pop(\n--1\n+0\n )%0A  \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-13_04-15-22",
+            "content": "class Crian\u00e7a:\n    def __init__(self, nome: str, idade: int):\n        self.__nome: str = nome\n        self.__idade: int = idade\n\n    def getNome(self) -> str:\n        return self.__nome\n    def getIdade(self) -> int:\n        return self.__idade\n\n    def setNome(self, nome: str) -> str:\n        self.__nome = nome\n    def setIdade(self, idade: int) -> int:\n        self.__idade = idade\n\n    def __str__(self) -> str:\n        return f\"{self.__nome}:{self.__idade}\"\n    \nclass Trampolim:\n    def __init__(self):\n        self.__brincando: list[Crian\u00e7a] = []\n        self.__espera: list[Crian\u00e7a] = []\n\n    def arrive(self, crian\u00e7a: Crian\u00e7a) -> None:\n        self.__espera.append(crian\u00e7a)\n        self.__espera.sort(key=lambda c: c.getIdade())\n\n    def enter(self):\n        if len(self.__espera) == 0:\n            return\n        crian\u00e7a = self.__espera.pop(-1)\n        self.__brincando.append(crian\u00e7a)\n\n\n    def __str__(self) -> str:\n        brincando = \", \".join([str(x) for x in self.__brincando])\n        espera = \", \".join([str(x) for x in self.__espera])\n        return f\"[{espera}] => [{brincando}]\"\n\ndef main():\n    trampolim = Trampolim()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(trampolim)\n        elif args[0] == \"arrive\":\n            nome = args[1]\n            idade = int(args[2])\n            crian\u00e7a = Crian\u00e7a(nome, idade)\n            trampolim.arrive(crian\u00e7a)\n        elif args[0] == \"enter\":\n            trampolim.enter()\n        else:\n            print(\"comando invalido\")\n\nmain()\n\n    \n\n",
+            "lines": "63"
+        }
+    ]
+}

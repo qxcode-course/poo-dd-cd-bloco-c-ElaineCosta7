@@ -1,0 +1,31 @@
+2025-11-13 03:04:58, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-13 03:05:00, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-13 03:07:08, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-13 03:07:12, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-13 03:07:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0
+2025-11-13 03:12:47, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:20, size:59
+2025-11-13 03:20:21, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:63
+2025-11-13 03:26:42, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:62
+2025-11-13 03:27:01, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:62
+2025-11-13 03:31:12, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:40, size:62
+2025-11-13 03:31:28, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-13 03:31:44, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-13 03:31:46, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:40
+2025-11-13 03:35:51, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30, size:63
+2025-11-13 03:44:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30
+2025-11-13 03:44:14, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-13 03:44:18, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-13 03:45:27, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:40, size:63
+2025-11-13 03:50:57, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30, size:64
+2025-11-13 03:51:41, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-13 03:53:02, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-13 03:53:03, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:64
+2025-11-13 03:54:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30, size:64
+2025-11-13 04:07:20, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30, size:63
+2025-11-13 04:07:48, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-13 04:09:20, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-13 04:09:21, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30
+2025-11-13 04:10:04, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30
+2025-11-13 04:15:22, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:40, size:63
+2025-11-13 04:16:18, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:40
+2025-11-13 04:16:20, MOVE, v:1, k:poo@pula-pula, mode:BACK

@@ -77,7 +77,7 @@ def main():
         elif args[0] == "show":
             print(budega)
         else:
-            print("comando inválido")
+            print("comando invalido")
 
 
 main()
