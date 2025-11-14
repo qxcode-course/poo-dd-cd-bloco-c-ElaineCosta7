@@ -2,8 +2,423 @@
     "patches": [
         {
             "label": "2025-11-03_19-25-17",
-            "content": "",
+            "content": "@@ -1,27 +0,0 @@\n-lista = %5B%5D%0A%0Alista.append(0)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-11-13_14-52-15",
+            "content": "@@ -22,12 +22,6 @@\n end(\n-%22texto%22\n+0\n )\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-13_14-52-30",
+            "content": "@@ -1,43 +1,27 @@\n-numeros: list%5Bint%5D = %5B%5D%0A%0Amnumeros\n+lista = %5B%5D%0A%0Alista\n .append(\n 7)\n@@ -22,6 +22,12 @@\n end(\n-7\n+%22texto%22\n )\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-13_14-54-09",
+            "content": "@@ -18,16 +18,17 @@\n %5D = %5B%5D%0A%0A\n+m\n numeros.\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-13_14-54-15",
+            "content": "@@ -39,19 +39,4 @@\n d(7)\n-%0Aprint(numeros)\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-13_14-54-28",
+            "content": "@@ -1,5 +1,4 @@\n-#\n nume\n@@ -22,33 +22,23 @@\n %5B%5D%0A%0A\n-lista = %5B%5D%0A%0Alista\n+numeros\n .append(\n 0)%0Ap\n@@ -37,17 +37,17 @@\n end(\n-0\n+7\n )%0Aprint(\n list\n@@ -46,10 +46,12 @@\n int(\n-lista\n+numeros\n )\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-13_14-55-04",
+            "content": "@@ -48,15 +48,9 @@\n end(\n-%22oiiii%22\n+0\n )%0Apr\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_14-55-12",
+            "content": "@@ -48,12 +48,15 @@\n end(\n-True\n+%22oiiii%22\n )%0Apr\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_14-55-22",
+            "content": "@@ -1,12 +1,13 @@\n+#\n numeros: lis\n@@ -23,23 +23,33 @@\n %5B%5D%0A%0A\n-numeros\n+lista = %5B%5D%0A%0Alista\n .append(\n 7)%0Ap\n@@ -48,17 +48,20 @@\n end(\n-7\n+True\n )%0Aprint(\n nume\n@@ -56,16 +56,14 @@\n )%0Aprint(\n-numeros\n+lista\n )\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_14-56-17",
+            "content": "@@ -40,27 +40,8 @@\n (7)%0A\n-numeros.append(0)%0A%0A\n prin\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-13_14-56-40",
+            "content": "@@ -1,88 +1,9 @@\n-class Foo:%0A    def __init__(self, nome: str):%0A        self.__nome: str = nome%0A%0Aobjet\n+numer\n os: \n@@ -11,19 +11,19 @@\n ist%5B\n-Foo\n+int\n %5D = %5B%5D%0A%0A\n obje\n@@ -18,21 +18,21 @@\n %5D = %5B%5D%0A%0A\n-objet\n+numer\n os.appen\n@@ -40,9 +40,8 @@\n (7)%0A\n-#\n nume\n@@ -58,18 +58,19 @@\n (0)%0A\n+%0A\n print(\n-objet\n+numer\n os)\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_14-58-41",
+            "content": "@@ -116,14 +116,9 @@\n end(\n-%22tres%22\n+7\n )%0A#n\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-13_14-58-49",
+            "content": "@@ -1,48 +1,113 @@\n-numeros = %5B1, 2, 3, 4%5D%0A%0Aprint(numeros)%0Anumer\n+class Foo:%0A    def __init__(self, nome: str):%0A        self.__nome: str = nome%0A%0Aobjetos: list%5BFoo%5D = %5B%5D%0A%0Aobjet\n os.a\n@@ -116,9 +116,14 @@\n end(\n-5\n+%22tres%22\n )%0A#n\n@@ -145,16 +145,16 @@\n )%0Aprint(\n-numer\n+objet\n os)\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-13_15-02-44",
+            "content": "@@ -51,14 +51,9 @@\n end(\n-%22tres%22\n+5\n )%0A#n\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-02-52",
+            "content": "@@ -4,19 +4,8 @@\n eros\n-: list%5Bint%5D\n  = %5B\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-03-08",
+            "content": "@@ -63,11 +63,12 @@\n nd(%22\n-cuu\n+tres\n %22)%0A#\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-03-14",
+            "content": "@@ -58,16 +58,21 @@\n .append(\n+%22cuu%22\n )%0A#numer\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-03-19",
+            "content": "@@ -62,10 +62,8 @@\n end(\n-69\n )%0A#n\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-03-28",
+            "content": "@@ -1,16 +1,28 @@\n numeros:\n+ list%5Bint%5D =\n  %5B1, 2, \n@@ -30,13 +30,8 @@\n , 4%5D\n- * 69\n %0A%0Apr\n@@ -43,16 +43,35 @@\n umeros)%0A\n+numeros.append(69)%0A\n #numeros\n@@ -81,17 +81,16 @@\n pend(0)%0A\n-#\n print(nu\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-04-24",
+            "content": "@@ -8,9 +8,23 @@\n : %5B1\n-%5D\n+, 2, 3, 4%5D * 69\n %0A%0Apr\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-13_15-06-04",
+            "content": "@@ -1,14 +1,15 @@\n numero\n+s\n : %5B1%5D%0A%0Ap\n@@ -19,16 +19,17 @@\n t(numero\n+s\n )%0A#numer\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-13_15-06-20",
+            "content": "@@ -3,40 +3,54 @@\n mero\n-s = %5B0, 1, 2, 3, 4, 5%5D%0Aprint(len\n+: %5B1%5D%0A%0Aprint(numero)%0A#numeros.append(0)%0A#print\n (num\n@@ -54,9 +54,8 @@\n numeros)\n-)\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-13_15-07-39",
+            "content": "@@ -1,140 +1,48 @@\n-class Foo:%0A    def __init__(self, nome):%0A        self.nome = nome%0A%0Aobjetos = %5BFoo(%22A%22), Foo(%22B%22), Foo(%22C%22)%5D%0Aprint(len(objetos))   # sa%C3%ADda: 3\n+numeros = %5B0, 1, 2, 3, 4, 5%5D%0Aprint(len(numeros))\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-11-13_15-08-05",
+            "content": "@@ -111,16 +111,20 @@\n int(\n+len(\n objetos)\n  # s\n@@ -119,16 +119,19 @@\n objetos)\n+)  \n  # sa%C3%ADda\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-13_15-08-18",
+            "content": "@@ -1,9 +1,8 @@\n-c\n class Fo\n@@ -31,14 +31,12 @@\n lf, \n-x: int\n+nome\n ):%0A \n@@ -51,298 +51,83 @@\n elf.\n-x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0Alista_vazia: list%5Bint%5D = %5B%5D%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preencida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2\n+nome = nome%0A%0Aobjetos = %5BFoo(%22A%22\n ), Foo(\n-3\n+%22B%22\n ), Foo(\n-4), Foo(5)%5D%0A%0Alista_vazia.append(1)%0Alista_preenchida.append(Foo(6))%0A%0A# continue com seus pr%C3%B3\n+%22C%22)%5D%0Aprint(objetos) # sa%C3%ADda: 3\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_02-04-22",
+            "content": "@@ -1,8 +1,9 @@\n+c\n class Fo\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-11-14_02-04-30",
+            "content": "@@ -319,8 +319,32 @@\n Foo(6))%0A\n+%0A# continue com seus pr%C3%B3\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-11-14_02-08-36",
+            "content": "@@ -323,29 +323,4 @@\n 6))%0A\n-%0Aprint(lista_preenchida)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-14_02-09-09",
+            "content": "@@ -190,35 +190,8 @@\n  5%5D%0A\n-lista_preenchida.append(0)%0A\n list\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-11-14_02-10-00",
+            "content": "@@ -1,76 +1,355 @@\n-%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preenchida.append(0\n+class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0Alista_vazia: list%5Bint%5D = %5B%5D%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preenchida.append(0)%0Alista_preencida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Alista_vazia.append(1)%0Alista_preenchida.append(Foo(6)\n )%0A%0Ap\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-11-14_02-10-28",
+            "content": "@@ -68,9 +68,9 @@\n end(\n-6\n+0\n )%0A%0Ap\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-10-35",
+            "content": "@@ -61,12 +61,16 @@\n ida.\n-pop(\n+append(6\n )%0A%0Ap\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-11-46",
+            "content": "@@ -1,102 +1,47 @@\n-%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preenchida.insert(0, 0)%0A%0Aprint(lista_preenchida)\n+@@ -61,17 +61,16 @@%0A ida.pop(%0A-4%0A )%250A%250Aprint\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_02-14-14",
+            "content": "@@ -68,12 +68,12 @@\n ert(\n-5, 6\n+0, 0\n )%0A%0Ap\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-14-36",
+            "content": "@@ -64,17 +64,17 @@\n .insert(\n-4\n+5\n , 6)%0A%0Apr\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-15-53",
+            "content": "@@ -61,12 +61,19 @@\n ida.\n-pop(\n+insert(4, 6\n )%0A%0Ap\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-16-13",
+            "content": "@@ -65,9 +65,8 @@\n pop(\n-0\n )%0A%0Ap\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-16-15",
+            "content": "@@ -61,17 +61,17 @@\n ida.pop(\n-1\n+0\n )%0A%0Aprint\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-16-23",
+            "content": "@@ -75,18 +75,8 @@\n int(\n-%22, %22.join(\n list\n@@ -88,10 +88,9 @@\n enchida)\n-)\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-25-36",
+            "content": "@@ -85,24 +85,8 @@\n oin(\n-str(n) for n in \n list\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-27-01",
+            "content": "@@ -71,16 +71,41 @@\n %0A%0Aprint(\n+%22, %22.join(str(n) for n in\n  lista_p\n@@ -118,7 +118,6 @@\n ida)\n+)\n %0A\n-  \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-27-23",
+            "content": "@@ -71,16 +71,17 @@\n %0A%0Aprint(\n+ \n lista_pr\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_02-27-29",
+            "content": "@@ -1,39 +1,73 @@\n-n = 10%0Alista = list(range(0, n + 1)\n+%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preenchida.pop(1\n )%0A%0Ap\n@@ -76,12 +76,23 @@\n nt(lista\n+_preenchida\n )%0A  \n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_02-34-37",
+            "content": "@@ -19,16 +19,19 @@\n t(range(\n+0, \n n + 1))%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-41-24",
+            "content": "@@ -27,11 +27,9 @@\n n + \n-235\n+1\n ))%0A%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-41-40",
+            "content": "@@ -30,18 +30,8 @@\n  235\n-8837832392\n ))%0A%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-41-47",
+            "content": "@@ -20,16 +20,32 @@\n (range(n\n+ + 2358837832392\n ))%0A%0Aprin\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-41-56",
+            "content": "@@ -1,64 +1,46 @@\n-import random%0A%0Alista = %5Brandom.randint(1,100) for _ in range(1)%5D\n+n = 10%0Alista = list(range(n))%0A%0Aprint(lista)%0A  \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-45-30",
+            "content": "@@ -61,18 +61,4 @@\n (1)%5D\n-%0A%0Aprint(lista)\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-14_02-45-41",
+            "content": "@@ -38,11 +38,9 @@\n t(1,\n- 10\n+1\n 00) \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-45-49",
+            "content": "@@ -60,9 +60,9 @@\n nge(\n-9\n+1\n )%5D%0A%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-46-00",
+            "content": "@@ -28,18 +28,19 @@\n dom.rand\n-om\n+int\n (1, 1000\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-48-08",
+            "content": "@@ -31,16 +31,23 @@\n .random(\n+1, 1000\n ) for _ \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-48-17",
+            "content": "@@ -28,21 +28,15 @@\n dom.\n-uniform(6, 70\n+random(\n ) fo\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-48-47",
+            "content": "@@ -36,12 +36,12 @@\n orm(\n-5, 1\n+6, 7\n 0) f\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-49-02",
+            "content": "@@ -58,9 +58,9 @@\n nge(\n-3\n+9\n )%5D%0A%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-49-14",
+            "content": "@@ -12,42 +12,8 @@\n om%0A%0A\n-cores = %5B%22verde%22, %22azul%22, %22rosa%22%5D%0A\n list\n@@ -28,20 +28,21 @@\n dom.\n-choice(cores\n+uniform(5, 10\n ) fo\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-50-13",
+            "content": "@@ -91,9 +91,9 @@\n nge(\n-5\n+3\n )%5D%0A%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_02-50-19",
+            "content": "@@ -91,9 +91,9 @@\n nge(\n-1\n+5\n )%5D%0A%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_02-50-25",
+            "content": "@@ -1,75 +1,102 @@\n-lista = %5B10, 20, 30, 40%5D%0A%0Aprint(lista%5B0%5D)   # 10%0Aprint(lista%5B1%5D)   # 20\n+import random%0A%0Acores = %5B%22verde%22, %22azul%22, %22rosa%22%5D%0Alista = %5Brandom.choice(cores) for _ in range(1)%5D%0A\n %0Apri\n@@ -107,15 +107,5 @@\n ista\n-%5B2%5D)   # 30\n+)\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_02-53-54",
+            "content": "@@ -35,9 +35,9 @@\n sta%5B\n-8\n+0\n %5D)  \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-54-06",
+            "content": "@@ -27,25 +27,25 @@\n print(lista%5B\n-1\n+8\n %5D)   # 10%0Apr\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-54-13",
+            "content": "@@ -36,10 +36,8 @@\n ta%5B1\n-:4\n %5D)  \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-55-51",
+            "content": "@@ -33,17 +33,17 @@\n lista%5B1:\n-3\n+4\n %5D)   # 1\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-56-01",
+            "content": "@@ -31,17 +31,17 @@\n t(lista%5B\n-0\n+1\n :3%5D)   #\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-56-12",
+            "content": "@@ -33,17 +33,17 @@\n lista%5B0:\n-4\n+3\n %5D)   # 1\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-56-23",
+            "content": "@@ -37,9 +37,9 @@\n a%5B0:\n-5\n+4\n %5D)  \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-56-28",
+            "content": "@@ -33,17 +33,17 @@\n lista%5B0:\n-1\n+5\n %5D)   # 1\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-56-45",
+            "content": "@@ -33,17 +33,17 @@\n lista%5B0:\n-2\n+1\n %5D)   # 1\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-56-52",
+            "content": "@@ -31,17 +31,17 @@\n t(lista%5B\n-3\n+0\n :2%5D)   #\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_02-57-01",
+            "content": "@@ -7,69 +7,90 @@\n = %5B1\n+0\n , 2\n+0\n , 3\n+0\n , 4\n-, 5%5D%0A%0Afor i in range(len(lista)):%0A    \n+0%5D%0A%0Aprint(lista%5B3:2%5D)   # 10%0Aprint(lista%5B1%5D)   # 20%0A\n print(\n-i, \n lista%5B\n-i\n+2\n %5D)\n+   # 30\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_03-01-44",
+            "content": "@@ -54,15 +54,16 @@\n     \n-valor =\n+print(i,\n  lis\n@@ -71,21 +71,5 @@\n a%5Bi%5D\n-%0A    print(valor\n )\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_03-02-51",
+            "content": "@@ -22,22 +22,8 @@\n 5%5D%0A%0A\n-%0Aprint(lista)%0A\n for \n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-14_03-03-08",
+            "content": "@@ -61,11 +61,8 @@\n sta)\n- -1\n ):%0A \n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-14_03-04-07",
+            "content": "@@ -61,12 +61,8 @@\n sta)\n- -1,\n  -1)\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-14_03-04-16",
+            "content": "@@ -61,24 +61,16 @@\n sta) -1,\n- -1, -1,\n  -1):%0A  \n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-14_03-04-22",
+            "content": "@@ -64,10 +64,43 @@\n ) -1\n-):\n+, -1, -1, -1):%0A    valor = lista%5Bi%5D\n %0A   \n@@ -102,18 +102,18 @@\n %5D%0A    print(\n-lista\n+valor\n )\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-14_03-04-52",
+            "content": "@@ -61,12 +61,8 @@\n sta)\n- -1,\n  -1)\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_03-05-11",
+            "content": "@@ -61,20 +61,16 @@\n sta) -1,\n- -1,\n  -1):%0A  \n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_03-05-17",
+            "content": "@@ -65,20 +65,16 @@\n  -1, -1,\n- -1,\n  -1):%0A  \n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_03-05-30",
+            "content": "@@ -6,60 +6,78 @@\n  = %5B\n-%22a%22, %22b%22, %22c%22, %22d%22%5D%0A%0Afor i, valor in enumerate(lista\n+1, 2, 3, 4, 5%5D%0A%0A%0Aprint(lista)%0Afor i in range(len(lista) -1, -1, -1, -1\n ):%0A \n@@ -89,13 +89,10 @@\n int(\n-i, valor\n+lista\n )\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-14_03-08-07",
+            "content": "@@ -6,59 +6,35 @@\n  = %5B\n-10, 20, 30, 40, 50%5D%0Ax = 30%0A%0Aencontrado = False\n+%22a%22, %22b%22, %22c%22, %22d%22%5D\n %0A%0Afor\n+ i,\n  val\n@@ -43,97 +43,41 @@\n  in \n-lista:%0A    if valor == x:%0A        encontrado = True%0A        break%0A%0Aprint(encontrado)   # True\n+enumerate(lista):%0A    print(i, valor)\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_03-27-26",
+            "content": "@@ -30,10 +30,10 @@\n x = \n-69\n+30\n %0A%0Aen\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-11-14_03-27-37",
+            "content": "lista = [10, 20, 30, 40, 50]\nx = 69\n\nencontrado = False\n\nfor valor in lista:\n    if valor == x:\n        encontrado = True\n        break\n\nprint(encontrado)   # True",
+            "lines": "11"
         }
     ]
 }
