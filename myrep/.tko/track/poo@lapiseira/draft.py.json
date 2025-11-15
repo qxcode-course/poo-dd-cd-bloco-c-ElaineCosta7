@@ -2,8 +2,123 @@
     "patches": [
         {
             "label": "2025-11-13_04-20-12",
-            "content": "",
+            "content": "@@ -1,3059 +0,0 @@\n-class Grafite:%0A    def __init__(self, espessura: float, dureza: str, tamanho: int):%0A        self.__espessura: float = espessura%0A        self.__dureza: str = dureza%0A        self.__tamanho: int = tamanho%0A%0A    def usoPorFolha(self) -%3E int:%0A        gasto = %7B%22HB%22: 1, %222B%22: 2, %224B%22: 4, %226B%22: 6%7D%5Bself.__dureza%5D%0A        self.__tamanho -= gasto%0A        return self.__tamanho%0A%0A    def get_espessura(self) -%3E float:%0A        return self.__espessura%0A    def get_dureza(self) -%3E str:%0A        return self.__dureza%0A    def get_tamanho(self) -%3E int:%0A        return self.__tamanho%0A%0A    def set_tamanho(self, tamanho: int) -%3E int:%0A        self.__tamanho = tamanho%0A%0A    def __str__(self) -%3E str:%0A        return f%22%5B%7Bself.__espessura%7D:%7Bself.__dureza%7D:%7Bself.__tamanho%7D%5D%22%0A%0Aclass Lapiseira:%0A    def __init__(self, espessura: float):%0A        self.__espessura: float = espessura%0A        self.__ponta: Grafite %7C None = None%0A%0A    def temGrafite(self) -%3E bool:%0A        if self.__ponta == None:%0A            return False%0A        if self.__ponta != None:%0A            return True%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        if self.__ponta != None:%0A            print(%22fail: ja existe grafite%22)%0A            return False%0A        if grafite.get_espessura() != self.__espessura:%0A            print(%22fail: calibre incompativel%22)%0A            return False%0A        self.__ponta = grafite%0A        return True%0A    %0A    def remover(self) -%3E Grafite %7C None:%0A        aux = self.__ponta%0A        self.__ponta = None%0A        return aux%0A%0A    def escreverPagina(self) -%3E None:%0A        if self.__ponta == None:%0A            print(%22fail: nao existe grafite%22)%0A            return%0A%0A        gasto = %7B%22HB%22: 1, %222B%22: 2, %224B%22: 4, %226B%22: 6%7D%5Bself.__ponta.get_dureza()%5D%0A%0A        if self.__ponta.get_tamanho() %3C= 10: %0A            print(%22fail: tamanho insuficiente%22)%0A            return%0A%0A        if self.__ponta.get_tamanho() - gasto %3C 10:%0A            self.__ponta.set_tamanho(10)%0A            print(%22fail: folha incompleta%22)%0A            return%0A%0A        self.__ponta.usoPorFolha()%0A%0A    def __str__(self) -%3E str:%0A        if self.__ponta == None:%0A            ponta_str = %22null%22%0A        else:%0A            ponta_str = str(self.__ponta)%0A        return f%22calibre: %7Bself.__espessura%7D, grafite: %7Bponta_str%7D%22%0A%0Adef main():%0A    lapiseira = Lapiseira(%22%22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(lapiseira)%0A        elif args%5B0%5D == %22init%22:%0A            espessura = float(args%5B1%5D)%0A            lapiseira = Lapiseira(espessura)%0A        elif args%5B0%5D == %22insert%22:%0A            espessura = float(args%5B1%5D)%0A            dureza = args%5B2%5D%0A            tamanho = int(args%5B3%5D)%0A            grafite = Grafite(espessura, dureza, tamanho)%0A            lapiseira.inserir(grafite)%0A        elif args%5B0%5D == %22remove%22:%0A            lapiseira.remover()%0A        elif args%5B0%5D == %22write%22:%0A            lapiseira.escreverPagina()%0A        else:%0A            print(%22fail: comando invalido%22)%0Amain()\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-11-15_21-23-13",
+            "content": "@@ -893,50 +893,8 @@\n None\n-%0A        self.__tambor: list%5BGrafite%5D = %5B%5D\n %0A%0A  \n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-11-15_21-43-24",
+            "content": "@@ -2102,25 +2102,8 @@\n     \n- ponta_str = %22%5B%5D%22\n  if \n@@ -2119,39 +2119,66 @@\n nta \n-is\n+==\n  None\n- else str(self.__ponta)%0A\n+:%0A            ponta_str = %22null%22%0A        else:%0A    \n     \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-11-15_21-45-09",
+            "content": "@@ -2175,58 +2175,36 @@\n     \n-tambor\n+ponta\n _str = \n-%22%22.join(str(x) for x in \n+str(\n self.__\n-tambor\n+ponta\n )%0A  \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_21-45-58",
+            "content": "@@ -2273,12 +2273,15 @@\n a%7D, \n-bico\n+grafite\n : %7Bp\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_21-46-16",
+            "content": "@@ -2290,34 +2290,8 @@\n str%7D\n-, tambor: %3C%7Btambor.__str%7D%3E\n %22%0A%0Ad\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_21-46-43",
+            "content": "@@ -2300,24 +2300,26 @@\n or: %3C%7Btambor\n+._\n _str%7D%3E%22%0A%0Adef\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_21-46-58",
+            "content": "@@ -1336,9 +1336,9 @@\n mpat\n-%C3%AD\n+i\n vel%22\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_21-52-20",
+            "content": "@@ -2352,17 +2352,16 @@\n iseira(%22\n- \n %22)%0A    w\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_21-58-56",
+            "content": "@@ -937,80 +937,8 @@\n %5B%5D%0A%0A\n-    def set_tambor(self, tambor: list):%0A        self.__tambor = tambor%0A%0A\n     \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-11-15_22-16-37",
+            "content": "@@ -1009,72 +1009,8 @@\n or%0A%0A\n-    def get_tambor(self) -%3E str:%0A        return self.__tambor %0A%0A\n     \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-11-15_22-30-48",
+            "content": "@@ -1260,32 +1260,135 @@\n afite) -%3E bool:%0A\n+        if self.__ponta != None:%0A            print(%22fail: ja existe grafite%22)%0A            return False%0A\n         if grafi\n@@ -1519,30 +1519,23 @@\n f.__\n-tambor.append(\n+ponta = \n grafite\n-)\n %0A   \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-11-15_22-40-39",
+            "content": "@@ -3172,100 +3172,4 @@\n in()\n-%0A%0Aksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausagu\n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-11-15_22-41-28",
+            "content": "@@ -3174,291 +3174,8 @@\n ()%0A%0A\n-%0Aksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausaguksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausaguksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausagu\n ksix\n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-11-15_22-41-56",
+            "content": "@@ -3164,12 +3164,391 @@\n ido%22)%0Amain()\n+%0A%0A%0Aksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausaguksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausaguksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausaguksixsjhajshasjahjasajsjahna%0Asadjujsadajsua%0Adasdhsahjdsjahsau%0Aahshasasjuaqhs%0Ashxaagsxausgausagu\n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-11-15_22-42-31",
+            "content": "@@ -1464,33 +1464,8 @@\n    %0A\n-    def puxar(self)%0A    %0A\n     \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-11-15_22-42-53",
+            "content": "@@ -1483,132 +1483,8 @@\n elf)\n- -%3E bool:%0A        if self.__ponta is not None:%0A            print(%22fail: ja existe grafite no bico%22)%0A            return False\n %0A   \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-15_22-55-22",
+            "content": "@@ -1608,69 +1608,8 @@\n lse%0A\n-        if len(self.__tambor) == 0:%0A            return False%0A\n     \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-15_22-55-58",
+            "content": "@@ -3318,70 +3318,8 @@\n a()%0A\n-        elif args%5B0%5D == %22pull%22:%0A            lapiseira.puxar()%0A\n     \n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-11-15_22-56-34",
+            "content": "@@ -1669,72 +1669,8 @@\n lse%0A\n-        self.__ponta = self.__tambor.pop(0)%0A        return True%0A\n     \n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-15_23-41-39",
+            "content": "@@ -1960,32 +1960,24 @@\n iste grafite\n- no bico\n %22)%0A         \n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-11-15_23-42-16",
+            "content": "@@ -1,3513 +1,50 @@\n-class Grafite:%0A    def __init__(self, espessura: float, dureza: str, tamanho: int):%0A        self.__espessura: float = espessura%0A        self.__dureza: str = dureza%0A        self.__tamanho: int = tamanho%0A%0A    def usoPorFolha(self) -%3E int:%0A        gasto = %7B%22HB%22: 1, %222B%22: 2, %224B%22: 4, %226B%22: 6%7D%5Bself.__dureza%5D%0A        self.__tamanho -= gasto%0A        return self.__tamanho%0A%0A    def get_espessura(self) -%3E float:%0A        return self.__espessura%0A    def get_dureza(self) -%3E str:%0A        return self.__dureza%0A    def get_tamanho(self) -%3E int:%0A        return self.__tamanho%0A%0A    def set_tamanho(self, tamanho: int) -%3E int:%0A        self.__tamanho = tamanho%0A%0A    def __str__(self) -%3E str:%0A        return f%22%5B%7Bself.__espessura%7D:%7Bself.__dureza%7D:%7Bself.__tamanho%7D%5D%22%0A%0Aclass Lapiseira:%0A    def __init__(self, espessura: float):%0A        self.__espessura: float = espessura%0A        self.__ponta: Grafite %7C None = None%0A        self.__tambor: list%5BGrafite%5D = %5B%5D%0A%0A    def set_tambor(self, tambor: list):%0A        self.__tambor = tambor%0A%0A    def get_tambor(self) -%3E str:%0A        return self.__tambor %0A%0A    def temGrafite(self) -%3E bool:%0A        if self.__ponta == None:%0A            return False%0A        if self.__ponta != None:%0A            return True%0A%0A    def inserir(self, grafite: Grafite) -%3E bool:%0A        if grafite.get_espessura() != self.__espessura:%0A            print(%22fail: calibre incompat%C3%ADvel%22)%0A            return False%0A        self.__tambor.append(grafite)%0A        return True%0A    %0A    def puxar(self) -%3E bool:%0A        if self.__ponta is not None:%0A            print(%22fail: ja existe grafite no bico%22)%0A            return False%0A        if len(self.__tambor) == 0:%0A            return False%0A        self.__ponta = self.__tambor.pop(0)%0A        return True%0A    %0A    def remover(self) -%3E Grafite %7C None:%0A        aux = self.__ponta%0A        self.__ponta = None%0A        return aux%0A%0A    def escreverPagina(self) -%3E None:%0A        if self.__ponta == None:%0A            print(%22fail: nao existe grafite no bico%22)%0A            return%0A%0A        gasto = %7B%22HB%22: 1, %222B%22: 2, %224B%22: 4, %226B%22: 6%7D%5Bself.__ponta.get_dureza()%5D%0A%0A        if self.__ponta.get_tamanho() %3C= 10: %0A            print(%22fail: tamanho insuficiente%22)%0A            return%0A%0A        if self.__ponta.get_tamanho() - gasto %3C 10:%0A            self.__ponta.set_tamanho(10)%0A            print(%22fail: folha incompleta%22)%0A            return%0A%0A        self.__ponta.usoPorFolha()%0A%0A    def __str__(self) -%3E str:%0A        ponta_str = %22%5B%5D%22 if self.__ponta is None else str(self.__ponta)%0A        tambor_str = %22%22.join(str(x) for x in self.__tambor)%0A        return f%22calibre: %7Bself.__espessura%7D, bico: %7Bponta_str%7D, tambor: %3C%7Btambor_str%7D%3E%22%0A%0Adef main():%0A    lapiseira = Lapiseira(%22 %22)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(lapiseira)%0A        elif args%5B0%5D == %22init%22:%0A            espessura = float(args%5B1%5D)%0A            lapiseira = Lapiseira(espessura)%0A        elif args%5B0%5D == %22insert%22:%0A            espessura = float(args%5B1%5D)%0A            dureza = args%5B2%5D%0A            tamanho = int(args%5B3%5D)%0A            grafite = Grafite(espessura, dureza, tamanho)%0A            lapiseira.inserir(grafite)%0A        elif args%5B0%5D == %22remove%22:%0A            lapiseira.remover()%0A        elif args%5B0%5D == %22write%22:%0A            lapiseira.escreverPagina()%0A        elif args%5B0%5D == %22pull%22:%0A            lapiseira.puxar()%0A        else:%0A            print(%22fail: comando invalido%22\n+@@ -3502,12 +3502,18 @@%0A  invalido%2522)%250A%0A+main(\n )%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-15_23-43-25",
+            "content": "@@ -3506,14 +3506,8 @@\n alido%22)%0A\n-main()\n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-11-15_23-43-35",
+            "content": "class Grafite:\n    def __init__(self, espessura: float, dureza: str, tamanho: int):\n        self.__espessura: float = espessura\n        self.__dureza: str = dureza\n        self.__tamanho: int = tamanho\n\n    def usoPorFolha(self) -> int:\n        gasto = {\"HB\": 1, \"2B\": 2, \"4B\": 4, \"6B\": 6}[self.__dureza]\n        self.__tamanho -= gasto\n        return self.__tamanho\n\n    def get_espessura(self) -> float:\n        return self.__espessura\n    def get_dureza(self) -> str:\n        return self.__dureza\n    def get_tamanho(self) -> int:\n        return self.__tamanho\n\n    def set_tamanho(self, tamanho: int) -> int:\n        self.__tamanho = tamanho\n\n    def __str__(self) -> str:\n        return f\"[{self.__espessura}:{self.__dureza}:{self.__tamanho}]\"\n\nclass Lapiseira:\n    def __init__(self, espessura: float):\n        self.__espessura: float = espessura\n        self.__ponta: Grafite | None = None\n        self.__tambor: list[Grafite] = []\n\n    def set_tambor(self, tambor: list):\n        self.__tambor = tambor\n\n    def get_tambor(self) -> str:\n        return self.__tambor \n\n    def temGrafite(self) -> bool:\n        if self.__ponta == None:\n            return False\n        if self.__ponta != None:\n            return True\n\n    def inserir(self, grafite: Grafite) -> bool:\n        if grafite.get_espessura() != self.__espessura:\n            print(\"fail: calibre incompat\u00edvel\")\n            return False\n        self.__tambor.append(grafite)\n        return True\n    \n    def puxar(self) -> bool:\n        if self.__ponta is not None:\n            print(\"fail: ja existe grafite no bico\")\n            return False\n        if len(self.__tambor) == 0:\n            return False\n        self.__ponta = self.__tambor.pop(0)\n        return True\n    \n    def remover(self) -> Grafite | None:\n        aux = self.__ponta\n        self.__ponta = None\n        return aux\n\n    def escreverPagina(self) -> None:\n        if self.__ponta == None:\n            print(\"fail: nao existe grafite no bico\")\n            return\n\n        gasto = {\"HB\": 1, \"2B\": 2, \"4B\": 4, \"6B\": 6}[self.__ponta.get_dureza()]\n\n        if self.__ponta.get_tamanho() <= 10: \n            print(\"fail: tamanho insuficiente\")\n            return\n\n        if self.__ponta.get_tamanho() - gasto < 10:\n            self.__ponta.set_tamanho(10)\n            print(\"fail: folha incompleta\")\n            return\n\n        self.__ponta.usoPorFolha()\n\n    def __str__(self) -> str:\n        ponta_str = \"[]\" if self.__ponta is None else str(self.__ponta)\n        tambor_str = \"\".join(str(x) for x in self.__tambor)\n        return f\"calibre: {self.__espessura}, bico: {ponta_str}, tambor: <{tambor_str}>\"\n\ndef main():\n    lapiseira = Lapiseira(\" \")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(lapiseira)\n        elif args[0] == \"init\":\n            espessura = float(args[1])\n            lapiseira = Lapiseira(espessura)\n        elif args[0] == \"insert\":\n            espessura = float(args[1])\n            dureza = args[2]\n            tamanho = int(args[3])\n            grafite = Grafite(espessura, dureza, tamanho)\n            lapiseira.inserir(grafite)\n        elif args[0] == \"remove\":\n            lapiseira.remover()\n        elif args[0] == \"write\":\n            lapiseira.escreverPagina()\n        elif args[0] == \"pull\":\n            lapiseira.puxar()\n        else:\n            print(\"fail: comando invalido\")\nmain()",
+            "lines": "114"
         }
     ]
 }

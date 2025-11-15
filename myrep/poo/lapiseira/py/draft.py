@@ -26,6 +26,13 @@ class Lapiseira:
     def __init__(self, espessura: float):
         self.__espessura: float = espessura
         self.__ponta: Grafite | None = None
+        self.__tambor: list[Grafite] = []
+
+    def set_tambor(self, tambor: list):
+        self.__tambor = tambor
+
+    def get_tambor(self) -> str:
+        return self.__tambor 
 
     def temGrafite(self) -> bool:
         if self.__ponta == None:
@@ -34,13 +41,19 @@ class Lapiseira:
             return True
 
     def inserir(self, grafite: Grafite) -> bool:
-        if self.__ponta != None:
-            print("fail: ja existe grafite")
-            return False
         if grafite.get_espessura() != self.__espessura:
-            print("fail: calibre incompativel")
+            print("fail: calibre incompatível")
             return False
-        self.__ponta = grafite
+        self.__tambor.append(grafite)
+        return True
+    
+    def puxar(self) -> bool:
+        if self.__ponta is not None:
+            print("fail: ja existe grafite no bico")
+            return False
+        if len(self.__tambor) == 0:
+            return False
+        self.__ponta = self.__tambor.pop(0)
         return True
     
     def remover(self) -> Grafite | None:
@@ -50,7 +63,7 @@ class Lapiseira:
 
     def escreverPagina(self) -> None:
         if self.__ponta == None:
-            print("fail: nao existe grafite")
+            print("fail: nao existe grafite no bico")
             return
 
         gasto = {"HB": 1, "2B": 2, "4B": 4, "6B": 6}[self.__ponta.get_dureza()]
@@ -67,14 +80,12 @@ class Lapiseira:
         self.__ponta.usoPorFolha()
 
     def __str__(self) -> str:
-        if self.__ponta == None:
-            ponta_str = "null"
-        else:
-            ponta_str = str(self.__ponta)
-        return f"calibre: {self.__espessura}, grafite: {ponta_str}"
+        ponta_str = "[]" if self.__ponta is None else str(self.__ponta)
+        tambor_str = "".join(str(x) for x in self.__tambor)
+        return f"calibre: {self.__espessura}, bico: {ponta_str}, tambor: <{tambor_str}>"
 
 def main():
-    lapiseira = Lapiseira("")
+    lapiseira = Lapiseira(" ")
     while True:
         line: str = input()
         print("$" + line)
@@ -96,6 +107,8 @@ def main():
             lapiseira.remover()
         elif args[0] == "write":
             lapiseira.escreverPagina()
+        elif args[0] == "pull":
+            lapiseira.puxar()
         else:
             print("fail: comando invalido")
 main()
