@@ -169,3 +169,18 @@
 2025-11-14 15:12:37, MOVE, v:1, k:poo@array, mode:PICK
 2025-11-14 15:12:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
 2025-11-14 15:12:38, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-14 21:57:39, SELF, v:1, k:poo@array, rate:100, iagen:gpt, alone:4, study:130
+2025-11-14 21:57:39, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-14 21:57:40, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-14 21:57:55, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-14 21:57:56, EXEC, v:1, k:poo@budega, mode:FULL, rate:100, size:83
+2025-11-14 21:58:11, EXEC, v:1, k:poo@budega, mode:FULL, rate:100
+2025-11-14 21:58:12, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-14 21:58:14, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-14 21:58:15, EXEC, v:1, k:poo@budega, mode:FULL, rate:100
+2025-11-14 21:58:16, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-14 21:58:17, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-14 21:58:18, EXEC, v:1, k:poo@budega, mode:FULL, rate:100
+2025-11-14 23:12:41, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-14 23:12:42, EXEC, v:1, k:poo@budega, mode:FULL, rate:100
+2025-11-14 23:12:43, MOVE, v:1, k:poo@budega, mode:BACK
