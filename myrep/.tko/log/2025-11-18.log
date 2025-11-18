@@ -1,0 +1,15 @@
+2025-11-18 21:38:19, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-18 21:38:19, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-18 21:38:22, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-18 21:38:54, EXEC, v:1, k:poo@budega, mode:FULL, rate:0
+2025-11-18 21:59:02, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:65
+2025-11-18 21:59:25, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:66
+2025-11-18 22:02:39, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:72
+2025-11-18 22:03:09, EXEC, v:1, k:poo@budega, mode:FULL, rate:50, size:73
+2025-11-18 22:03:25, EXEC, v:1, k:poo@budega, mode:FULL, rate:90, size:73
+2025-11-18 22:03:37, EXEC, v:1, k:poo@budega, mode:FULL, rate:90, size:73
+2025-11-18 22:03:53, EXEC, v:1, k:poo@budega, mode:FULL, rate:90, size:73
+2025-11-18 22:04:05, EXEC, v:1, k:poo@budega, mode:FULL, rate:100, size:73
+2025-11-18 22:04:43, EXEC, v:1, k:poo@budega, mode:FULL, rate:100, size:74
+2025-11-18 22:04:43, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-18 22:05:58, SELF, v:1, k:poo@budega, rate:100, human:namorado, alone:8, study:320

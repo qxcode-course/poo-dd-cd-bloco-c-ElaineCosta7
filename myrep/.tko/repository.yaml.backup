@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-11-16 16:17:07'
+  cache_timestamp: '2025-11-17 19:02:28'
   filters:
   - listas
 expanded:
@@ -20,7 +20,7 @@ expanded:
 - poo@bloco_c-listas
 tasks:
   poo@array: '{rate:100, iagen:gpt, alone:6, study:180}'
-  poo@budega: '{rate:100, guide:aula, alone:4, study:120}'
+  poo@budega: '{rate:100, human:namorado, alone:8, study:320}'
   poo@lapiseira: '{rate:100, human:amigo, alone:7, study:150}'
   poo@pula-pula: '{rate:50}'
   poo@cinema: '{rate:100, human:namorado, alone:8, study:250}'
@@ -31,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@cinema
+selected: poo@lapiseira
