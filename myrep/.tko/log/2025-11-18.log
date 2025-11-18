@@ -13,3 +13,21 @@
 2025-11-18 22:04:43, EXEC, v:1, k:poo@budega, mode:FULL, rate:100, size:74
 2025-11-18 22:04:43, MOVE, v:1, k:poo@budega, mode:BACK
 2025-11-18 22:05:58, SELF, v:1, k:poo@budega, rate:100, human:namorado, alone:8, study:320
+2025-11-18 22:08:34, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-18 22:08:35, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-18 22:15:50, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-18 22:43:39, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-18 22:43:40, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-18 22:51:38, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-18 23:02:44, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-18 23:10:04, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:96
+2025-11-18 23:11:57, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:90, size:96
+2025-11-18 23:12:17, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:90, size:96
+2025-11-18 23:25:26, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:90, size:98
+2025-11-18 23:26:27, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:90
+2025-11-18 23:28:33, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:80, size:98
+2025-11-18 23:29:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:80, size:98
+2025-11-18 23:30:35, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:80, size:98
+2025-11-18 23:31:56, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:100, size:97
+2025-11-18 23:32:55, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:100
+2025-11-18 23:32:56, MOVE, v:1, k:poo@pula-pula, mode:BACK
