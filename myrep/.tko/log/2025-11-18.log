@@ -31,3 +31,4 @@
 2025-11-18 23:31:56, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:100, size:97
 2025-11-18 23:32:55, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:100
 2025-11-18 23:32:56, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-18 23:35:19, SELF, v:1, k:poo@pula-pula, rate:100, human:amigos, alone:7, study:360
